@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Desafio 06</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Desafio.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+</head>
+<body>
+    <!-- CARROSSEL -->
+    
+    <div class="ban">
+            <div class="linha1"></div>
+            <div class="logo">
+                <div class="logom"><img src="images/citi.png"></div>
+                <div class="titulao"><p>Feedback</p></div>
+            </div>
+            <div class="linha1"></div>
+    </div>
+
+    <div class="banner">
+        <div>
+            <img src="images/CITi_Citanda-1.jpg">
+            <div class="mascara"></div>
+        </div>
+        <div>
+            <img src="images/CITi_Citanda-2.jpg">
+        </div>
+        <div>
+            <img src="images/CITi_Citanda-3.jpg">
+        </div>
+    </div>
+    
+
+    <!-- TOP FEEEDBACKS -->
+    <div class="tittopfb">
+        <div class="linha"></div>
+        <div class="titulo">
+            <h3>Top Feedbacks</h3>
+        </div>
+        <div class="linha"></div>
+    </div>
+    <div class="topfb">
+        <div class="top">
+            <div class="nome"><p>Millena Galvão</p></div>
+            <div id="img1">
+                <div id="qtdfb">
+                    <div id="icone"></div>
+                    <div id="numero">9</div>
+                </div>
+            </div>
+        </div>
+        <div class="nontop">
+            <div class="nome"><p>Nathália Brito</p></div>
+            <div id="img2">
+                <div id="qtdfb">
+                    <div id="icone"></div>
+                    <div id="numero">7</div>
+                </div>
+            </div>
+        </div>
+        <div class="nontop">
+            <div class="nome"><p>Lara Oliveira</p></div>
+            <div id="img3">
+                <div id="qtdfb">
+                    <div id="icone"></div>
+                    <div id="numero">4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENVIAR MEU FEEDBACK-->
+    <div class="titenviarfb">
+            <div class="linha"></div>
+            <div class="titulo1">
+                <h3>Enviar meu feedback</h3>
+            </div>
+            <div class="linha"></div>
+    </div>
+    <div id="retangulo"></div>
+    <div class="enviarfb">
+        <div class="parte1">
+            <div class="fnome">  
+                <form>
+                    <label>Meu nome</label><br>
+                    <input type="text" placeholder="Alecsandro Silva">
+                </form>
+            </div>
+            <div id="email">
+                <form>
+                    <label>E-mail do destinatário:</label><br/>
+                    <input type="text" placeholder="nome.nome@citi.org.br">
+                </form>
+            </div>
+        </div>
+        <div class="parte2">
+            <div id="feedt">
+                <form>
+                    <label>Feedback</label><br>
+                    <input type="text">
+                </form>
+            </div>
+            <div id="empty"></div>
+        </div>
+        <div class="parte 3">
+            <div id="botao">
+                    <h1>Enviar</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--    SCRIPTS    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.banner').slick({
+            autoplay: true,
+            autoplaySpeed: 7000,
+            arrows: true,
+            draggable: true,
+            //pra pegar o que fez no html
+            prevArrow: $('.prev'), //referenciando pela classe da arrow
+      	    nextArrow: $('.next')
+          });
+        });
+    </script>
+
+</body>
+</html>
